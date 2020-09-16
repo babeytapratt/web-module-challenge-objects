@@ -66,7 +66,7 @@ console.log(reviews[5]);
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 reviews.push({name: "Brian", rating: '4.0', feedback: "The restaurant is very clean and has a festive atmosphere. The food is great and the margharitas are to die for!"})
-
+console.log(reviews[8]);
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 
@@ -83,8 +83,8 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere and wonderful vegan options!`
 */
 
-function getReviewByIndex(banana, index) {
-  return `${banana[index].name} gave the restaurant a ${banana[index].rating} star review and their feedback was: ${banana[index].feedback}`
+function getReviewByIndex(array, index) {
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review and their feedback was: ${array[index].feedback}`
 }
 console.log(getReviewByIndex(reviews, 3));
 
